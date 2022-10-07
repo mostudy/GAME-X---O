@@ -12,57 +12,47 @@
 
 
 
-header h1 {
-  font-size: 48px;
-  margin-bottom: 30px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-header p {
-  font-size: 22px;
-}
-main {
-  width: 100%; margin-top: -50px;
 
-  padding: 30px 20px;
-  /* min-height: calc(100vh - 211px - 58px); */
+html {
+  height: 100%;
 }
-article {
-  background-color: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-article:last-child {
-  margin-bottom: 0;
+
+.content {
+  padding: 12px 20px;
 }
-article h3 {
-  margin: 10px 0 25px 0;
-}
-article p {
-  margin-top: 16px;
-  line-height: 24px;
-}
+
+header,
 footer {
-  text-align: center;
-  background-color: #333;
-  color: #fff;
   padding: 20px;
-  position: absolute;
-  bottom: 0; 
-  width: 100%;
-  /* position: fixed;
-  z-index: 1; */
+  color: #fff;
 }
 
-@media(max-width:768px) {
-  header { padding: 30px 20px;}
-  header h1 { font-size: 36px; margin-bottom: 22px; }
-  header p { font-size: 18px; }
-  main { width: 100vw; padding: 20px; }
-  article { margin-bottom: 16px; font-size: 14px; }
-  article h3 { margin: 10px 0 20px 0; }
-  article p { margin-top: 16px; line-height: 20px; }
+header {
+  background-color: #b91a30;
 }
+
+footer {
+  margin-top: auto;
+  background-color: black;
+}
+
     </style>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+     <link rel="stylesheet" href="./style.css" />
+     <title>Static Template</title>
 </head>
 <body>
     <main class="background">
@@ -89,10 +79,15 @@ footer {
         </section>
     </main>
 
-    <header>
+ 
+       
+     
+        
+    
+        <footer>
+          <h2>Developer / Youssef Al-Sabahi Ahmed &copy; <script>document.write(new Date().getFullYear());</script>, Coding Journey</h2>
+        </footer>
       
-      <footer>
-        <p>Developer / Youssef Al-Sabahi Ahmed &copy; <script>document.write(new Date().getFullYear());</script>, Coding Journey</p>
-      </footer>
+    
 </body>
 </html>
